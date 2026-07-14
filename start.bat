@@ -1,4 +1,4 @@
 @echo off
-pip install PyQt5 PyQtWebEngine ua_generator
+pip install -r requirements.txt
 python browser.py
 pause
