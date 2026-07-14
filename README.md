@@ -5,4 +5,6 @@
 git clone https://github.com/teplovvaceslpv-cell/f_browsers<br>
 cd f_browsers<br>
 python browser.py<br>
-(либо просто кликаете на start.bat)
+(либо просто кликаете на start.bat)<br>
+
+P.S. И во время использования используйте HTTP(S) или SOCKS5 прокси.
