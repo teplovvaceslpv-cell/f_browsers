@@ -6,6 +6,7 @@ from PyQt5.QtGui import QIcon
 import ua_generator
 import os
 
+os.environ["QTWEBENGINE_REMOTE_DEBUGGING"] = "9222"
 os.environ["QTWEBENGINE_CHROMIUM_FLAGS"] = (
     "--enable-features=DnsOverHttps "
     "--dns-over-https-mode=secure "
