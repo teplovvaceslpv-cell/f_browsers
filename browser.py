@@ -13,7 +13,6 @@ os.environ["QTWEBENGINE_CHROMIUM_FLAGS"] = (
     "--dns-over-https-templates=https://dns.quad9.net/dns-query"
 )
 
-
 class BackButton(QToolButton):
     def __init__(self, parent=None):
         super(BackButton, self).__init__(parent)
