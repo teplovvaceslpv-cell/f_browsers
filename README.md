@@ -4,6 +4,7 @@
 # Как использовать:
 git clone https://github.com/teplovvaceslpv-cell/f_browsers<br>
 cd f_browsers<br>
+pip install -r requirements.txt
 python browser.py<br>
 (либо просто кликаете на start.bat)<br>
 
