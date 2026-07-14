@@ -3,9 +3,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
 from PyQt5.QtGui import QIcon
-from fake_useragent import UserAgent
-
-ua = UserAgent(platforms="pc")
+import ua_generator
 
 class BackButton(QToolButton):
     def __init__(self, parent=None):
@@ -36,7 +34,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
         
         self.private_profile = QWebEngineProfile()
-        self.private_profile.setHttpUserAgent(ua.random)
+        self.private_profile.setHttpUserAgent(ua_generator.generate(device='desktop').text)
         self.page = QWebEnginePage(self.private_profile, self)
 
         self.browser = QWebEngineView(self)
